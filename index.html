@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信鍇裕有限公司｜CNC銑床車床加工｜夾治具製造</title>
+  <meta name="description" content="信鍇裕有限公司創立於1991年，專營CNC銑床、車床、研磨加工及各式機械零組件製造與夾治具設計開發。">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    /* ===== Header ===== */
+header {
+  position: relative;
+  padding: 90px 20px 60px;
+  text-align: center;
+  color: white;           /* 白色文字 */
+  z-index: 1;             /* 確保文字在上層 */
+}
+
+header h1 {
+  font-size: 42px;        /* 標題變大 */
+  font-weight: 700;       /* 加粗字體 */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5); /* 黑色陰影增加對比 */
+}
+
+header p {
+  font-size: 30px;        /* 內文變大 */
+  font-weight: 700;       /* 稍微加粗 */
+  text-shadow: 0 1px 5px rgba(0,0,0,0.4); /* 內文陰影讓字更清楚 */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("machined-cnc-parts.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;  /* 背景淡化，文字更突出 */
+  z-index: -1;    /* 背景在文字下方 */
+}
+
+
+    header h1 {
+      font-size: 45px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin: 5px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #38bdf8;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    /* ===== 導覽列 ===== */
+    nav {
+      background: #0a192f;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* ===== 區塊 ===== */
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 30px;
+      color: #0f3460;
+    }
+
+    /* ===== 關於我們科技背景 ===== */
+.about-section {
+  position: relative;  /* 必須，才能放 ::before 背景圖 */
+  color: white;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: url("head.jpg") center/cover no-repeat;
+  opacity: 1.0;   /* 背景透明度，可調 0.3~0.5 */
+  z-index: -1;     /* 文字置於背景上方 */
+}
+
+    .about-section h2 {
+      color: #e5e7eb;   /* 科技亮藍 */
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* ===== 服務卡片 ===== */
+    .services {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #0f3460;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0a192f;
+      color: #94a3b8;
+      text-align: center;
+      padding: 30px;
+    }
+
+    /* ===== 響應式 ===== */
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      header {
+        padding: 60px 20px 40px 20px;
+      }
+    }
+  /* ===== About Section 文字放大 ===== */
+  .about-content p {
+    font-size: 18.0px;   /* 文字變大 */
+    line-height: 1.9;  /* 行距更舒適 */
+  }
+
+  .about-content h2 {
+    font-size: 36px;   /* 標題變大 */
+  }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>信鍇裕有限公司</h1>
+    <p>CNC銑床加工｜CNC車床加工｜夾治具設計製造</p>
+    <p>專業製造技術．穩定品質．誠信服務</p>
+    <a href="#contact" class="btn">立即聯絡我們</a>
+  </header>
+
+  <nav>
+    <a href="#about">關於我們</a>
+    <a href="#services">服務項目</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>關於我們</h2>
+      <p>
+        信鍇裕有限公司創立於1991年，專營CNC銑床、車床、研磨加工，
+        提供各式機械零件與電子零件開發製造服務。
+      </p>
+      <p>
+        本公司擁有多年製造經驗與專業技術，
+        提供客製化夾治具設計、開發與組立，
+        累積穩定品質與高度客戶信任。
+      </p>
+      <p>
+        加工材料包含鋼材、鋁材、銅材、不鏽鋼(SUS)、
+        鎢鋼、工程塑膠、PVC、優力膠等多元材質。
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>服務項目</h2>
+    <div class="services">
+      <div class="card">
+        <img src="service1.jpg" alt="CNC銑床車床加工設備">
+        <h3>CNC銑床 / 車床加工</h3>
+        <p>
+          精密零件客製加工，小量試作與量產皆可承接，
+          提供高精度與穩定品質的加工服務。
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="service2.jpg" alt="夾治具設計製造">
+        <h3>夾治具設計與製造</h3>
+        <p>
+          專業客製化夾治具設計開發，
+          提升生產效率與加工穩定性。
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="service3.jpg" alt="機械零件與電子零件開發">
+        <h3>機械零件與電子零件開發</h3>
+        <p>
+          提供各式產業機械零件與電子相關零組件
+          精密加工與製造服務。
+        </p>
+      </div>
+    </div>
+
+    <div class="cta" style="text-align:center; margin-top:40px;">
+      <a href="#contact" class="btn">立即洽詢合作</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <p><strong>Email：</strong> sinkaiyu@ms43.hinet.net</p>
+    <p><strong>Tel：</strong> 03-3793973</p>
+    <p><strong>Address：</strong> 桃園市桃園區裕和街60號</p>
+  </section>
+
+  <footer>
+    © 2026 信鍇裕有限公司 All Rights Reserved.
+  </footer>
+
+</body>
+</html>
